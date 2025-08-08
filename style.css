@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background-color: #001f3f; /* azul oscuro de la tarjeta */
-  background-image: url("fotos/fresa-fondo.png"), url("fotos/fresa-fondo.png");
+  background-color: #0a3c88; /* azul oscuro de la tarjeta */
+  background-image: url("fotos/fresitas.jpeg"), url("fotos/fresitas.jpeg");
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right top;
   background-size: 150px auto, 150px auto;
@@ -14,7 +14,7 @@ body {
 header {
   text-align: center;
   padding: 2rem;
-  background-color: #ff0000; /* rojo fuerte */
+  background-color: #8d1b1b; /* rojo fuerte */
   color: white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   border-bottom: 5px solid #ffff00; /* borde amarillo */
@@ -79,7 +79,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #ff0000;
+  background-color: #971515;
   color: white;
   transform: scale(1.05);
 }
@@ -196,7 +196,6 @@ body::after {
   top: 0;
   bottom: 0;
   width: 150px;
-  background: url('fotos/fresitas.jpeg') repeat-y center;
   background: url('fotos/fresitas.jpeg') repeat-y right;
   background-size: cover;
   opacity: 0.25;
@@ -238,3 +237,34 @@ main, header, footer, section {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.galeria {
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 2em;
+  color: #ed0a0a; /* Azul oscuro de la tarjeta */
+  margin-bottom: 20px;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.imagenes img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+}
+
